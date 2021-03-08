@@ -13,7 +13,7 @@ const countReducer = (state, action) => {
       }
     }
     default: {
-      throw new Error('This type is not supported')
+      throw new Error(`Unsupported action type: ${action.type}`)
     }
   }
 }
